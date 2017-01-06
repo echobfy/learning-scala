@@ -1,4 +1,4 @@
-package akkaDocuments.remote
+package akkaDocuments.remoting
 
 import akka.actor.{ActorSystem, Props}
 import com.typesafe.config.ConfigFactory

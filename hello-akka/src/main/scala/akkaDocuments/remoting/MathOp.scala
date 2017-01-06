@@ -1,4 +1,4 @@
-package akkaDocuments.remote
+package akkaDocuments.remoting
 
 /**
   * Created by fybai on 05/01/2017.

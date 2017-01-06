@@ -1,4 +1,4 @@
-package akkaDocuments.remote
+package akkaDocuments.remoting
 
 import akka.actor.{Actor, ActorIdentity, ActorRef, Identify, ReceiveTimeout, Terminated}
 import akka.actor.Actor.Receive

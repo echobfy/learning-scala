@@ -1,4 +1,4 @@
-package akkaDocuments.remote
+package akkaDocuments.remoting
 
 import scala.concurrent.duration._
 import scala.util.Random
@@ -33,6 +33,9 @@ object LookupApplication {
   def startRemoteLookupSystem(): Unit = {
     val system = ActorSystem("LookupSystem", ConfigFactory.load("remotelookup"))
 
+    /**
+      * 使用 akka.<protocol>://<actor system>@<hostname>:<port>/<actor path>路径来查找远程节点的actor
+      */
     val remotePath = "akka.tcp://CalculatorSystem@127.0.0.1:2552/user/calculator"
     val actor = system.actorOf(Props(classOf[LookupActor], remotePath), "lookupActor")
 
